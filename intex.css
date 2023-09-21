@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg2.jpg');
+    background-color: #f0f0f0;
+}
+textarea {
+    resize: none;
+    margin-right: 50px ;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+}
+.input-container1,.input-container2{
+    padding: 10vh;
+}
+.input-container {
+    background-color: #ffffff89;
+    backdrop-filter: blur(5px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.input-container1 {
+    background-color: #ffffff89;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.input-container2 {
+    background-color: #ffffff89;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+/* button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+.result-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#encoded-result, #decoded-result {
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+label{
+    color: #1e1e1e;
+}
+p {
+    white-space: pre-wrap;
+}
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(0, 0, 0, 0.6);
+    --animation-color: #1e1e1e;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  /* .input-container,.input-container1,.input-container2{
+    opacity: 0.5;
+  } */

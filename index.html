@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Huffman Coding Encoder/Decoder</title> -->
+    <link rel="stylesheet" href="intex.css">
+</head>
+<body>
+    <!-- <h1>Huffman Coding Encoder/Decoder</h1> -->
+    <div class="input-container">
+        <label for="main-input">Enter Key:</label>
+        <textarea id="main-input" rows="5" style="resize: none;"></textarea>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <div class="input-container1">
+                    <label for="encode-input">Text to Encode:</label>
+                    <textarea id="encode-input" rows="5" cols="10" style="resize: none;"></textarea>
+                    <!-- <button id="encode-button">Encode</button> -->
+                    <button id="encode-button" data-text="Awesome" class="button">
+                        <span class="actual-text">&nbsp;ENCODE&nbsp;</span>
+                        <span class="hover-text" aria-hidden="true">&nbsp;ENCODE&nbsp;</span>
+                    </button>
+                </div>
+            </td>
+            <td style="width: 30vh;">
+
+            </td>
+            <td>
+                <div class="input-container2">
+                    <label for="decode-input">Text to Decode:</label>
+                    <textarea id="decode-input" rows="5" cols="10" style="resize: none;"></textarea>
+                    <!-- <button >Decode</button> -->
+                    <button id="decode-button" data-text="Awesome" class="button">
+                        <span class="actual-text">&nbsp;DECODE&nbsp;</span>
+                        <span class="hover-text" aria-hidden="true">&nbsp;DECODE&nbsp;</span>
+                    </button>
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+    
+    <div class="result-container">
+        <div id="encoded-result">
+            <h2 style="color: white;">Encoded Text:</h2>
+            <textarea id="encoded-text" rows="6" style="resize: none;"></textarea>
+        </div>
+        <div id="decoded-result">
+            <h2 style="color: white;">Decoded Text:</h2>
+            <textarea id="decoded-text" rows="6" style="resize: none;"></textarea>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
